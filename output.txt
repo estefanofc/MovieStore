@@ -1,0 +1,1059 @@
+Fri Mar 13 03:55:41 PDT 2020
+Linux csslab9.uwb.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+uid=1016866(estefano) gid=2121016866(estefano) groups=2121016866(estefano),605559(lab-access)
+*** compiling with clang++ to create an executable called myprogram
+clang version 7.0.1 (tags/RELEASE_701/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/rh/llvm-toolset-7.0/root/usr/bin
+Classic.cpp:15:54: warning: field 'MLastName' will be initialized after field 'Year' [-Wreorder]
+                             MFirstName{MFirstName}, MLastName{MLastName},
+                                                     ^
+Classic.cpp:16:30: warning: field 'Year' will be initialized after field 'Month' [-Wreorder]
+                             Year{Year},
+                             ^
+2 warnings generated.
+In file included from Customer.cpp:5:
+./Customer.h:39:7: warning: private field 'ID' is not used [-Wunused-private-field]
+  int ID = 0;
+      ^
+1 warning generated.
+History.cpp:19:48: warning: unused parameter 'Movies' [-Wunused-parameter]
+void History::run(map<char, vector<Movie *> *> Movies,
+                                               ^
+1 warning generated.
+Inventory.cpp:15:36: warning: unused parameter 'Customers' [-Wunused-parameter]
+                    const HashMap &Customers) {
+                                   ^
+1 warning generated.
+*** running myprogram
+=====================================
+Start testStoreFinal
+Start testStore2
+EXCEPTION: Invalid Movie Type --> Z
+EXCEPTION: Invalid Movie Type --> Z
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Customer already exist in database
+EXCEPTION: Invalid Command Type --> X
+EXCEPTION: Invalid Command Type --> Z
+STORE INVENTORY
+Comedies:
+10, Woody Allen, Annie Hall, 1977
+10, Joel Coen, Fargo, 1996
+10, John Landis, National Lampoon's Animal House, 1978
+10, Different Years, Pirates of the Caribbean, 2000
+10, Gore Verbinski, Pirates of the Caribbean, 2003
+10, Nora Ephron, Sleepless in Seattle, 1993
+10, Rob Reiner, When Harry Met Sally, 1989
+10, Nora Ephron, You've Got Mail, 1998
+
+Dramas:
+10, Barry Levinson, Good Morning Vietnam, 1988
+10, Barry Levinson, Same Director Good Morning Vietnam, 1988
+10, Clint Eastwood, Unforgiven, 1992
+10, Gus Van Sant, Good Will Hunting, 2000
+10, Jonathan Demme, Silence of the Lambs, 1991
+10, Nancy Savoca, Dogfight, 1991
+10, Phillippe De Broca, King of Hearts, 1967
+10, Steven Spielberg, Schindler's List, 1993
+
+Classics:
+10, George Cukor, Holiday, 9/1938, Cary Grant
+10, George Cukor, Holiday, 9/1938, Katherine Hepburn
+10, Victor Fleming, Gone With the Wind, 2/1939, Clark Gable
+10, Victor Fleming, Gone With the Wind, 2/1939, Vivien Leigh
+10, Victor Fleming, The Wizard of Oz, 7/1939, Judy Garland
+10, George Cukor, The Philadelphia Story, 5/1940, Cary Grant
+10, George Cukor, The Philadelphia Story, 5/1940, Katherine Hepburn
+10, John Huston, The Maltese Falcon, 10/1941, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Ingrid Bergman
+10, Frank Capra, It's a Wonderful Life, 11/1946, Donna Reed
+10, Frank Capra, It's a Wonderful Life, 11/1946, James Steward
+10, Stanley Kubrick, A Clockwork Orange, 2/1971, Malcolm McDowell
+10, Hal Ashby, Harold and Maude, 3/1971, Ruth Gordon
+
+History of Customer Minnie Mouse
+History of Customer Freddie Frog
+History of Customer Wally Wacky
+EXCEPTION: Invalid Movie Type --> Z
+EXCEPTION: Cannot borrow from movie not present in inventory
+EXCEPTION: Not enough stock to borrow from movie 
+EXCEPTION: Not enough stock to borrow from movie 
+EXCEPTION: Not enough stock to borrow from movie 
+EXCEPTION: Cannot borrow from movie not present in inventory
+STORE INVENTORY
+Comedies:
+9, Woody Allen, Annie Hall, 1977
+8, Joel Coen, Fargo, 1996
+9, John Landis, National Lampoon's Animal House, 1978
+10, Different Years, Pirates of the Caribbean, 2000
+10, Gore Verbinski, Pirates of the Caribbean, 2003
+9, Nora Ephron, Sleepless in Seattle, 1993
+9, Rob Reiner, When Harry Met Sally, 1989
+9, Nora Ephron, You've Got Mail, 1998
+
+Dramas:
+9, Barry Levinson, Good Morning Vietnam, 1988
+10, Barry Levinson, Same Director Good Morning Vietnam, 1988
+9, Clint Eastwood, Unforgiven, 1992
+9, Gus Van Sant, Good Will Hunting, 2000
+9, Jonathan Demme, Silence of the Lambs, 1991
+8, Nancy Savoca, Dogfight, 1991
+9, Phillippe De Broca, King of Hearts, 1967
+9, Steven Spielberg, Schindler's List, 1993
+
+Classics:
+9, George Cukor, Holiday, 9/1938, Cary Grant
+10, George Cukor, Holiday, 9/1938, Katherine Hepburn
+10, Victor Fleming, Gone With the Wind, 2/1939, Clark Gable
+10, Victor Fleming, Gone With the Wind, 2/1939, Vivien Leigh
+10, Victor Fleming, The Wizard of Oz, 7/1939, Judy Garland
+9, George Cukor, The Philadelphia Story, 5/1940, Cary Grant
+9, George Cukor, The Philadelphia Story, 5/1940, Katherine Hepburn
+9, John Huston, The Maltese Falcon, 10/1941, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Ingrid Bergman
+10, Frank Capra, It's a Wonderful Life, 11/1946, Donna Reed
+10, Frank Capra, It's a Wonderful Life, 11/1946, James Steward
+8, Stanley Kubrick, A Clockwork Orange, 2/1971, Malcolm McDowell
+0, Hal Ashby, Harold and Maude, 3/1971, Ruth Gordon
+
+History of Customer Minnie Mouse
+B: D, D Barry Levinson, Good Morning Vietnam,
+
+B: D, C 5 1940 Katherine Hepburn
+
+B: D, D Gus Van Sant, Good Will Hunting,
+
+B: D, C 5 1940 Cary Grant
+
+B: D, C 3 1971 Ruth Gordon
+
+B: Z, F Fargo, 1996
+
+History of Customer Mickey Mouse
+B: D, C 2 1971 Malcolm McDowell
+
+B: D, C 3 1971 Ruth Gordon
+
+B: D, C 10 1941 Humphrey Bogart
+
+B: D, C 9 1938 Cary Grant
+
+History of Customer Freddie Frog
+B: D, C 3 1971 Ruth Gordon
+
+R: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+R: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+R: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+History of Customer Wally Wacky
+B: D, F You've Got Mail, 1998
+
+R: D, F You've Got Mail, 1998
+
+B: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+B: D, F National Lampoon's Animal House, 1978
+
+History of Customer Porky Pig
+B: D, F Annie Hall, 1977
+
+B: D, F When Harry Met Sally, 1989
+
+B: D, D Jonathan Demme, Silence of the Lambs,
+
+B: D, D Nancy Savoca, Dogfight,
+
+B: D, C 3 1971 Ruth Gordon
+
+End testStore2
+End testStoreFinal
+=====================================
+Done.
+*** running clang-tidy using options from .clang-tidy
+LLVM (http://llvm.org/):
+  LLVM version 7.0.1
+  Optimized build.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: broadwell
+16146 warnings generated.
+27031 warnings generated.
+37915 warnings generated.
+51560 warnings generated.
+67311 warnings generated.
+81377 warnings generated.
+92261 warnings generated.
+103965 warnings generated.
+117842 warnings generated.
+131659 warnings generated.
+142153 warnings generated.
+152992 warnings generated.
+167286 warnings generated.
+185724 warnings generated.
+201871 warnings generated.
+219919 warnings generated.
+/home/NETID/estefano/CSS343/uwb2020wi343b-movies-estefanofc/HashMap.cpp:9:1: warning: constructor does not initialize these fields: Table [cppcoreguidelines-pro-type-member-init]
+HashMap::HashMap() {
+^
+/home/NETID/estefano/CSS343/uwb2020wi343b-movies-estefanofc/History.cpp:19:48: warning: parameter 'Movies' is unused [misc-unused-parameters]
+void History::run(map<char, vector<Movie *> *> Movies,
+                                               ^~~~~~~
+                                                /*Movies*/
+/home/NETID/estefano/CSS343/uwb2020wi343b-movies-estefanofc/Inventory.cpp:15:36: warning: parameter 'Customers' is unused [misc-unused-parameters]
+                    const HashMap &Customers) {
+                                   ^~~~~~~~~~
+                                    /*Customers*/
+Suppressed 219915 warnings (219915 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+*** running clang-format format formatting suggestions
+*** formatting suggestions for Borrow.cpp
+8c8
+< //default constructor
+---
+> // default constructor
+11,15c11,13
+< //overloaded constructor
+< Borrow::Borrow(int CustomerID, const string &MediaType,
+<                const string &MovieStr) : CustomerID{CustomerID},
+<                                          MediaType{MediaType},
+<                                          MovieStr{MovieStr} {
+---
+> // overloaded constructor
+> Borrow::Borrow(int CustomerID, const string &MediaType, const string &MovieStr)
+>     : CustomerID{CustomerID}, MediaType{MediaType}, MovieStr{MovieStr} {}
+17,19c15
+< }
+< 
+< //default destructor
+---
+> // default destructor
+22c18
+< //overriden run method from parent class
+---
+> // overriden run method from parent class
+32,33c28,29
+<     cout << "EXCEPTION: Cannot borrow from movie not present in inventory" <<
+<          endl;
+---
+>     cout << "EXCEPTION: Cannot borrow from movie not present in inventory"
+>          << endl;
+49c45
+< //displays values from current class
+---
+> // displays values from current class
+54,55d49
+< 
+< 
+*** formatting suggestions for Classic.cpp
+7,17c7,12
+< //overloaded constructor
+< Classic::Classic(int Stock,
+<                  const string &Director,
+<                  const string &Title,
+<                  const string &MFirstName,
+<                  const string &MLastName,
+<                  int Month,
+<                  int Year) : Movie(Stock, Director, Title),
+<                              MFirstName{MFirstName}, MLastName{MLastName},
+<                              Year{Year},
+<                              Month{Month} {
+---
+> // overloaded constructor
+> Classic::Classic(int Stock, const string &Director, const string &Title,
+>                  const string &MFirstName, const string &MLastName, int Month,
+>                  int Year)
+>     : Movie(Stock, Director, Title),
+>       MFirstName{MFirstName}, MLastName{MLastName}, Year{Year}, Month{Month} {}
+19,21c14
+< }
+< 
+< //overriden method for sorting
+---
+> // overriden method for sorting
+27,29c20,22
+<       ((Year == OtherMv->Year) && (Month < OtherMv->Month)) ||
+<       ((Year == OtherMv->Year) && (Month == OtherMv->Month) &&
+<           (Actor < OtherActor)));
+---
+>           ((Year == OtherMv->Year) && (Month < OtherMv->Month)) ||
+>           ((Year == OtherMv->Year) && (Month == OtherMv->Month) &&
+>            (Actor < OtherActor)));
+32c25
+< //overriden method for comparison
+---
+> // overriden method for comparison
+38c31
+<       (Month == OtherMv->Month));
+---
+>           (Month == OtherMv->Month));
+41c34
+< //overriden method to display current class
+---
+> // overriden method to display current class
+43,44c36,37
+<   Os << Stock << ", " << Director << ", " << Title << ", " <<
+<      Month << "/" << Year << ", " << MFirstName << " " << MLastName << endl;
+---
+>   Os << Stock << ", " << Director << ", " << Title << ", " << Month << "/"
+>      << Year << ", " << MFirstName << " " << MLastName << endl;
+48c41
+< //gets an unique identifier for the class based on sorting attributes
+---
+> // gets an unique identifier for the class based on sorting attributes
+55c48
+< //default constructor
+---
+> // default constructor
+58c51
+< //default destructor
+---
+> // default destructor
+60,61d52
+< 
+< 
+*** formatting suggestions for Comedy.cpp
+6,9c6,8
+< //overloaded constructor
+< Comedy::Comedy(int Stock, const string &Director, const string &Title,
+<                int Year) : Movie(Stock, Director, Title), Year{Year} {
+< }
+---
+> // overloaded constructor
+> Comedy::Comedy(int Stock, const string &Director, const string &Title, int Year)
+>     : Movie(Stock, Director, Title), Year{Year} {}
+11c10
+< //overriden method for sorting
+---
+> // overriden method for sorting
+14,15c13,14
+<   return Title < OtherMv->Title || ((Title == OtherMv->Title) &&
+<       (Year < OtherMv->Year));
+---
+>   return Title < OtherMv->Title ||
+>          ((Title == OtherMv->Title) && (Year < OtherMv->Year));
+18c17
+< //overiden method for comparison
+---
+> // overiden method for comparison
+24c23
+< //displays contents of current class
+---
+> // displays contents of current class
+30c29
+< //returns an unique identifier based no sorting attributes
+---
+> // returns an unique identifier based no sorting attributes
+37c36
+< //default constructor
+---
+> // default constructor
+40c39
+< //default destructor
+---
+> // default destructor
+*** formatting suggestions for Command.cpp
+7c7
+< //default constructor
+---
+> // default constructor
+10c10
+< //virtual destructor, can be implemented by child classes
+---
+> // virtual destructor, can be implemented by child classes
+13c13
+< //virtual run method, must be overriden by all child classes
+---
+> // virtual run method, must be overriden by all child classes
+15c15
+<   for (auto Curr: *Movies) {
+---
+>   for (auto Curr : *Movies) {
+23,27c23,24
+< //ostream operator
+< ostream &operator<<(ostream &Os, const Command &Cmd) {
+<   return Cmd.display(Os);
+< }
+< 
+---
+> // ostream operator
+> ostream &operator<<(ostream &Os, const Command &Cmd) { return Cmd.display(Os); }
+*** formatting suggestions for CommandFactory.cpp
+7c7
+< //default constructor
+---
+> // default constructor
+10c10
+< //default destructor
+---
+> // default destructor
+13c13
+< //static method to create command objects based on their type
+---
+> // static method to create command objects based on their type
+23,24c23,26
+<   case 'I':return new Inventory();
+<   case 'H':Ss >> ID;
+---
+>   case 'I':
+>     return new Inventory();
+>   case 'H':
+>     Ss >> ID;
+26c28,29
+<   case 'B':Ss >> ID >> Media;
+---
+>   case 'B':
+>     Ss >> ID >> Media;
+30c33,34
+<   case 'R':Ss >> ID >> Media;
+---
+>   case 'R':
+>     Ss >> ID >> Media;
+34c38,39
+<   default:cout << "EXCEPTION: Invalid Command Type --> " << Type << endl;
+---
+>   default:
+>     cout << "EXCEPTION: Invalid Command Type --> " << Type << endl;
+*** formatting suggestions for Customer.cpp
+7c7
+< //default constructor
+---
+> // default constructor
+10,12c10,12
+< //overloaded constructor
+< Customer::Customer(int ID, const string &FirstName, const string &LastName) :
+<     ID{ID}, FirstName{FirstName}, LastName{LastName} {
+---
+> // overloaded constructor
+> Customer::Customer(int ID, const string &FirstName, const string &LastName)
+>     : ID{ID}, FirstName{FirstName}, LastName{LastName} {
+17c17
+< //default destructor
+---
+> // default destructor
+20c20
+< //borrows movie from store
+---
+> // borrows movie from store
+30c30
+< //returns movie to store
+---
+> // returns movie to store
+47,50c47,48
+< //adds a command to customer's history
+< void Customer::addToHistory(stringstream &Ss) {
+<   History.push_back(Ss.str());
+< }
+---
+> // adds a command to customer's history
+> void Customer::addToHistory(stringstream &Ss) { History.push_back(Ss.str()); }
+52c50
+< //display customer's history
+---
+> // display customer's history
+56c54
+<   for (const auto &Curr: History)
+---
+>   for (const auto &Curr : History)
+*** formatting suggestions for Drama.cpp
+6,9c6,8
+< //overloaded constructor
+< Drama::Drama(int Stock, const string &Director, const string &Title,
+<              int Year) : Movie(Stock, Director, Title), Year{Year} {
+< }
+---
+> // overloaded constructor
+> Drama::Drama(int Stock, const string &Director, const string &Title, int Year)
+>     : Movie(Stock, Director, Title), Year{Year} {}
+11c10
+< //comparison method for sorting
+---
+> // comparison method for sorting
+15c14
+<       ((Director == OtherMv->Director) && (Title < OtherMv->Title));
+---
+>          ((Director == OtherMv->Director) && (Title < OtherMv->Title));
+18c17
+< //comparison method
+---
+> // comparison method
+24c23
+< //displays class' contents
+---
+> // displays class' contents
+30c29
+< //returns unique identifier based on sorting attributes
+---
+> // returns unique identifier based on sorting attributes
+37c36
+< //default constructor
+---
+> // default constructor
+40c39
+< //overriden destructor
+---
+> // overriden destructor
+*** formatting suggestions for HashMap.cpp
+8c8
+< //default constructor, sets all values to nullptr
+---
+> // default constructor, sets all values to nullptr
+11c11
+<   for (auto &I: Table)
+---
+>   for (auto &I : Table)
+14c14
+< //default destructor
+---
+> // default destructor
+17,20c17,18
+< //returns true if map is empty
+< bool HashMap::isEmpty() const {
+<   return Count == 0;
+< }
+---
+> // returns true if map is empty
+> bool HashMap::isEmpty() const { return Count == 0; }
+22,25c20,21
+< //retrieves number of entries in map
+< int HashMap::getNumberOfEntries() {
+<   return Count;
+< }
+---
+> // retrieves number of entries in map
+> int HashMap::getNumberOfEntries() { return Count; }
+27c23
+< //inserts <key, value> pair into map
+---
+> // inserts <key, value> pair into map
+40,43c36,37
+< //gets value based on key
+< Customer *HashMap::getValue(int Key) const {
+<   return Table[hashing(Key)];
+< }
+---
+> // gets value based on key
+> Customer *HashMap::getValue(int Key) const { return Table[hashing(Key)]; }
+45,48c39,40
+< //returns true if key is present in map
+< bool HashMap::contains(int Key) const {
+<   return Table[hashing(Key)] != nullptr;
+< }
+---
+> // returns true if key is present in map
+> bool HashMap::contains(int Key) const { return Table[hashing(Key)] != nullptr; }
+50,53c42,43
+< //hash function to determine position in array
+< int HashMap::hashing(int Key) const {
+<   return Key % MAX_CAPACITY;
+< }
+---
+> // hash function to determine position in array
+> int HashMap::hashing(int Key) const { return Key % MAX_CAPACITY; }
+55,58c45,46
+< //retrieves a collection of all keys
+< const vector<int> &HashMap::getKeySet() const {
+<   return KeySet;
+< }
+---
+> // retrieves a collection of all keys
+> const vector<int> &HashMap::getKeySet() const { return KeySet; }
+*** formatting suggestions for History.cpp
+8c8
+< //default constructor
+---
+> // default constructor
+11,13c11,12
+< //explicit overloaded constructor
+< History::History(int CustomerID) : CustomerID{CustomerID} {
+< }
+---
+> // explicit overloaded constructor
+> History::History(int CustomerID) : CustomerID{CustomerID} {}
+15c14
+< //default destructor
+---
+> // default destructor
+18c17
+< //overriden run method to perform command
+---
+> // overriden run method to perform command
+29c28
+< //overriden display method to display class' contents
+---
+> // overriden display method to display class' contents
+34d32
+< 
+*** formatting suggestions for Inventory.cpp
+7c7
+< //default constructor
+---
+> // default constructor
+10c10
+< //default overriden destructor
+---
+> // default overriden destructor
+13c13
+< //overriden run method to peroform class commands
+---
+> // overriden run method to peroform class commands
+21c21
+<   for (auto Curr: *Comedies)
+---
+>   for (auto Curr : *Comedies)
+25c25
+<   for (auto Curr: *Dramas)
+---
+>   for (auto Curr : *Dramas)
+29c29
+<   for (auto Curr: *Classics)
+---
+>   for (auto Curr : *Classics)
+34c34
+< //overriden display method to display class' methods
+---
+> // overriden display method to display class' methods
+39,40d38
+< 
+< 
+*** formatting suggestions for main.cpp
+5d4
+< 
+*** formatting suggestions for Movie.cpp
+7c7
+< //default constructor
+---
+> // default constructor
+11,13c11,13
+< //overloaded constructor
+< Movie::Movie(int Stock, const string &Director, const string &Title) :
+<     Stock{Stock}, Director{Director}, Title{Title} {
+---
+> // overloaded constructor
+> Movie::Movie(int Stock, const string &Director, const string &Title)
+>     : Stock{Stock}, Director{Director}, Title{Title} {}
+15,20c15,16
+< }
+< 
+< //increases movie's stock
+< void Movie::increaseStock(int Quantity) {
+<   Stock += Quantity;
+< }
+---
+> // increases movie's stock
+> void Movie::increaseStock(int Quantity) { Stock += Quantity; }
+22c18
+< //decreases movie stock
+---
+> // decreases movie stock
+30,33c26,27
+< //returns movie's stock
+< int Movie::getStock() {
+<   return Stock;
+< }
+---
+> // returns movie's stock
+> int Movie::getStock() { return Stock; }
+35,38c29,30
+< //ostream operator to display class' contents
+< ostream &operator<<(ostream &Os, const Movie &Mv) {
+<   return Mv.display(Os);
+< }
+---
+> // ostream operator to display class' contents
+> ostream &operator<<(ostream &Os, const Movie &Mv) { return Mv.display(Os); }
+*** formatting suggestions for MovieFactory.cpp
+7c7
+< //default constructor
+---
+> // default constructor
+10c10
+< //default destructor
+---
+> // default destructor
+13c13
+< //creates a child of Movie based on the Genre (parameter)
+---
+> // creates a child of Movie based on the Genre (parameter)
+30c30,31
+<   case 'F':Year = stoi(Split[4]);
+---
+>   case 'F':
+>     Year = stoi(Split[4]);
+32c33,34
+<   case 'D':Year = stoi(Split[4]);
+---
+>   case 'D':
+>     Year = stoi(Split[4]);
+34c36,37
+<   case 'C':Ss.str("");
+---
+>   case 'C':
+>     Ss.str("");
+38,40c41,44
+<     return new Classic(Stock, Director, Title, MFirstName, MLastName,
+<                        ReMonth, ReYear);
+<   default:cout << "EXCEPTION: Invalid Movie Type --> " << Type << endl;
+---
+>     return new Classic(Stock, Director, Title, MFirstName, MLastName, ReMonth,
+>                        ReYear);
+>   default:
+>     cout << "EXCEPTION: Invalid Movie Type --> " << Type << endl;
+45,46c49,50
+< //creates a child of Movie based on the Genre (parameter)/input is separated
+< //by spaces
+---
+> // creates a child of Movie based on the Genre (parameter)/input is separated
+> // by spaces
+55c59,60
+<   case 'F':getline(MvSs, Curr, ',');
+---
+>   case 'F':
+>     getline(MvSs, Curr, ',');
+60c65,66
+<   case 'D':getline(MvSs, Curr, ',');
+---
+>   case 'D':
+>     getline(MvSs, Curr, ',');
+65,68c71,75
+<   case 'C':MvSs >> ReMonth >> ReYear >> MFirstName >> MLastName;
+<     return new Classic(Stock, "", "", MFirstName, MLastName,
+<                        ReMonth, ReYear);
+<   default:cout << "EXCEPTION: Invalid Movie Type --> " << Type << endl;
+---
+>   case 'C':
+>     MvSs >> ReMonth >> ReYear >> MFirstName >> MLastName;
+>     return new Classic(Stock, "", "", MFirstName, MLastName, ReMonth, ReYear);
+>   default:
+>     cout << "EXCEPTION: Invalid Movie Type --> " << Type << endl;
+*** formatting suggestions for MovieStore.cpp
+8c8
+< //reads and stores commands from txt file
+---
+> // reads and stores commands from txt file
+18d17
+< 
+21c20
+< //constructor
+---
+> // constructor
+28c27
+< //destructor
+---
+> // destructor
+31c30
+<   for (auto Curr: Keys) {
+---
+>   for (auto Curr : Keys) {
+35c34
+<   for (auto Curr: *Comedies)
+---
+>   for (auto Curr : *Comedies)
+37c36
+<   for (auto Curr: *Dramas)
+---
+>   for (auto Curr : *Dramas)
+39c38
+<   for (auto Curr: *Classics)
+---
+>   for (auto Curr : *Classics)
+47c46
+< //fills store movies and customer from txt files
+---
+> // fills store movies and customer from txt files
+53c52
+< //executes all commands
+---
+> // executes all commands
+63c62
+< //creates store's movies
+---
+> // creates store's movies
+77c76
+< //creates store's customers
+---
+> // creates store's customers
+87d85
+< 
+90c88
+< //adds movie to container
+---
+> // adds movie to container
+92c90
+<   for (auto Curr: *List) {
+---
+>   for (auto Curr : *List) {
+102c100
+< //sorts movie based on their sorting attribute
+---
+> // sorts movie based on their sorting attribute
+108c106
+< //retrieves the right container based on movie genre
+---
+> // retrieves the right container based on movie genre
+112d109
+< 
+*** formatting suggestions for Return.cpp
+8c8
+< //default constructor
+---
+> // default constructor
+11c11
+< //default destructor
+---
+> // default destructor
+14,17c14,16
+< //overloaded constructor
+< Return::Return(int CustomerID, const string &MediaType, const string
+< &MovieStr) : CustomerID{CustomerID}, MediaType{MediaType}, MovieStr{MovieStr} {
+< }
+---
+> // overloaded constructor
+> Return::Return(int CustomerID, const string &MediaType, const string &MovieStr)
+>     : CustomerID{CustomerID}, MediaType{MediaType}, MovieStr{MovieStr} {}
+19c18
+< //overriden run method to perform class commands
+---
+> // overriden run method to perform class commands
+41,42c40,41
+<     cout << "EXCEPTION: Cannot return movie that customer doesn't possess" <<
+<          endl;
+---
+>     cout << "EXCEPTION: Cannot return movie that customer doesn't possess"
+>          << endl;
+47c46
+< //overriden display method to output class' contents
+---
+> // overriden display method to output class' contents
+52d50
+< 
+*** formatting suggestions for store_test.cpp
+25c25
+<   //create a store object
+---
+>   // create a store object
+33,34c33,34
+<   //string Result = "IHHBRIBBIH";
+<   //assert(out.str() == result);
+---
+>   // string Result = "IHHBRIBBIH";
+>   // assert(out.str() == result);
+38,40c38
+< void testStore2() {
+< 
+< }
+---
+> void testStore2() {}
+51,53c49
+< void testAll() {
+<   testStoreFinal();
+< }
+---
+> void testAll() { testStoreFinal(); }
+*** running valgrind to detect memory leaks
+==31588== Memcheck, a memory error detector
+==31588== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31588== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==31588== Command: ./myprogram
+==31588== 
+=====================================
+Start testStoreFinal
+Start testStore2
+EXCEPTION: Invalid Movie Type --> Z
+EXCEPTION: Invalid Movie Type --> Z
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Invalid customerID
+EXCEPTION: Customer already exist in database
+EXCEPTION: Invalid Command Type --> X
+EXCEPTION: Invalid Command Type --> Z
+STORE INVENTORY
+Comedies:
+10, Woody Allen, Annie Hall, 1977
+10, Joel Coen, Fargo, 1996
+10, John Landis, National Lampoon's Animal House, 1978
+10, Different Years, Pirates of the Caribbean, 2000
+10, Gore Verbinski, Pirates of the Caribbean, 2003
+10, Nora Ephron, Sleepless in Seattle, 1993
+10, Rob Reiner, When Harry Met Sally, 1989
+10, Nora Ephron, You've Got Mail, 1998
+
+Dramas:
+10, Barry Levinson, Good Morning Vietnam, 1988
+10, Barry Levinson, Same Director Good Morning Vietnam, 1988
+10, Clint Eastwood, Unforgiven, 1992
+10, Gus Van Sant, Good Will Hunting, 2000
+10, Jonathan Demme, Silence of the Lambs, 1991
+10, Nancy Savoca, Dogfight, 1991
+10, Phillippe De Broca, King of Hearts, 1967
+10, Steven Spielberg, Schindler's List, 1993
+
+Classics:
+10, George Cukor, Holiday, 9/1938, Cary Grant
+10, George Cukor, Holiday, 9/1938, Katherine Hepburn
+10, Victor Fleming, Gone With the Wind, 2/1939, Clark Gable
+10, Victor Fleming, Gone With the Wind, 2/1939, Vivien Leigh
+10, Victor Fleming, The Wizard of Oz, 7/1939, Judy Garland
+10, George Cukor, The Philadelphia Story, 5/1940, Cary Grant
+10, George Cukor, The Philadelphia Story, 5/1940, Katherine Hepburn
+10, John Huston, The Maltese Falcon, 10/1941, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Ingrid Bergman
+10, Frank Capra, It's a Wonderful Life, 11/1946, Donna Reed
+10, Frank Capra, It's a Wonderful Life, 11/1946, James Steward
+10, Stanley Kubrick, A Clockwork Orange, 2/1971, Malcolm McDowell
+10, Hal Ashby, Harold and Maude, 3/1971, Ruth Gordon
+
+History of Customer Minnie Mouse
+History of Customer Freddie Frog
+History of Customer Wally Wacky
+EXCEPTION: Invalid Movie Type --> Z
+EXCEPTION: Cannot borrow from movie not present in inventory
+EXCEPTION: Not enough stock to borrow from movie 
+EXCEPTION: Not enough stock to borrow from movie 
+EXCEPTION: Not enough stock to borrow from movie 
+EXCEPTION: Cannot borrow from movie not present in inventory
+STORE INVENTORY
+Comedies:
+9, Woody Allen, Annie Hall, 1977
+8, Joel Coen, Fargo, 1996
+9, John Landis, National Lampoon's Animal House, 1978
+10, Different Years, Pirates of the Caribbean, 2000
+10, Gore Verbinski, Pirates of the Caribbean, 2003
+9, Nora Ephron, Sleepless in Seattle, 1993
+9, Rob Reiner, When Harry Met Sally, 1989
+9, Nora Ephron, You've Got Mail, 1998
+
+Dramas:
+9, Barry Levinson, Good Morning Vietnam, 1988
+10, Barry Levinson, Same Director Good Morning Vietnam, 1988
+9, Clint Eastwood, Unforgiven, 1992
+9, Gus Van Sant, Good Will Hunting, 2000
+9, Jonathan Demme, Silence of the Lambs, 1991
+8, Nancy Savoca, Dogfight, 1991
+9, Phillippe De Broca, King of Hearts, 1967
+9, Steven Spielberg, Schindler's List, 1993
+
+Classics:
+9, George Cukor, Holiday, 9/1938, Cary Grant
+10, George Cukor, Holiday, 9/1938, Katherine Hepburn
+10, Victor Fleming, Gone With the Wind, 2/1939, Clark Gable
+10, Victor Fleming, Gone With the Wind, 2/1939, Vivien Leigh
+10, Victor Fleming, The Wizard of Oz, 7/1939, Judy Garland
+9, George Cukor, The Philadelphia Story, 5/1940, Cary Grant
+9, George Cukor, The Philadelphia Story, 5/1940, Katherine Hepburn
+9, John Huston, The Maltese Falcon, 10/1941, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Humphrey Bogart
+10, Michael Curtiz, Casablanca, 8/1942, Ingrid Bergman
+10, Frank Capra, It's a Wonderful Life, 11/1946, Donna Reed
+10, Frank Capra, It's a Wonderful Life, 11/1946, James Steward
+8, Stanley Kubrick, A Clockwork Orange, 2/1971, Malcolm McDowell
+0, Hal Ashby, Harold and Maude, 3/1971, Ruth Gordon
+
+History of Customer Minnie Mouse
+B: D, D Barry Levinson, Good Morning Vietnam,
+
+B: D, C 5 1940 Katherine Hepburn
+
+B: D, D Gus Van Sant, Good Will Hunting,
+
+B: D, C 5 1940 Cary Grant
+
+B: D, C 3 1971 Ruth Gordon
+
+B: Z, F Fargo, 1996
+
+History of Customer Mickey Mouse
+B: D, C 2 1971 Malcolm McDowell
+
+B: D, C 3 1971 Ruth Gordon
+
+B: D, C 10 1941 Humphrey Bogart
+
+B: D, C 9 1938 Cary Grant
+
+History of Customer Freddie Frog
+B: D, C 3 1971 Ruth Gordon
+
+R: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+R: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+R: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+History of Customer Wally Wacky
+B: D, F You've Got Mail, 1998
+
+R: D, F You've Got Mail, 1998
+
+B: D, C 3 1971 Ruth Gordon
+
+B: D, C 3 1971 Ruth Gordon
+
+B: D, F National Lampoon's Animal House, 1978
+
+History of Customer Porky Pig
+B: D, F Annie Hall, 1977
+
+B: D, F When Harry Met Sally, 1989
+
+B: D, D Jonathan Demme, Silence of the Lambs,
+
+B: D, D Nancy Savoca, Dogfight,
+
+B: D, C 3 1971 Ruth Gordon
+
+End testStore2
+End testStoreFinal
+=====================================
+Done.
+==31588== 
+==31588== HEAP SUMMARY:
+==31588==     in use at exit: 0 bytes in 0 blocks
+==31588==   total heap usage: 2,880 allocs, 2,880 frees, 183,288 bytes allocated
+==31588== 
+==31588== All heap blocks were freed -- no leaks are possible
+==31588== 
+==31588== For counts of detected and suppressed errors, rerun with: -v
+==31588== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+*** cleaning up, deleting myprogram
+Fri Mar 13 03:56:53 PDT 2020
