@@ -1,13 +1,5 @@
 # Movie Store
 
-## Replace all TODO with actual information
-
-Author(s): Estefano Felipa
-
-GitHub URL: https://github.com/uwbclass/uwb2020wi343b-movies-estefanofc
-
-Expected Mark: as high as possible?
-
 ## Checklist
 
 Development Platform: CLion on MacOS
